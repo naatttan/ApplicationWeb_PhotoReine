@@ -1,0 +1,68 @@
+.bouton {
+    background-color: #bfef88;
+    padding: 11px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bouton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    border: none;
+    background-color: cyan;
+    height: 3px;
+    margin-top: 3%;
+}
+
+
+.menu {
+    display: flex;
+    margin-top: 1%;
+    width: 60%;
+    float: left;
+}
+
+.menu li {
+    list-style-type: none;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.logoicon {
+    margin-top: 0%;
+    width: 30%;
+    float: right;
+}
+
+#container {
+    display: flex;
+}
+
+
+#logo {
+    width: 12%;
+    float: right;
+    margin-left: 20%;
+    margin-right: 17%;
+}
+
+#icon-nav {
+    width: 16%;
+    float: right;
+}
+
+#icon-nav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+}

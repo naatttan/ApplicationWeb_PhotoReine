@@ -1,0 +1,133 @@
+#photo {
+    width: 60%;
+    float: left;
+}
+
+#imageaff {
+    float: left;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#espacecommentaire {
+    position: relative;
+    width: 35%;
+    height: 100%;
+    float: right;
+    display: flex;
+}
+
+#nblike  {
+    display: inline-block;
+}
+
+#bulle {
+    width: 10%;
+}
+
+#photo,
+#espacecommentaire {
+    display: inline-block;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0.2em;
+    font-family: Arial;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+#comment-box {
+    bottom: 0;
+    width: 85%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    resize: none;
+    flex-grow: 1;
+    height: 100%;
+}
+
+#btn-envoyer {
+    width: 15%;
+    height: 100%;
+    background-color: white;
+    border-color: white;
+}
+
+.comment-box-container{
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+}
+
+
+#pseudo {
+    width: 100%;
+    text-align: left;
+    width: 20%;
+    display: flex-start;
+}
+
+#boutonlike {
+    width: 23%;
+    float: right;
+    border-radius: 10px;
+    margin-right: 15%;
+
+}
+
+#like {
+    width: 20%;
+    float: right;
+    display: flex-start;
+}
+
+#pseudo,
+#like {
+    display: inline-block;
+
+
+}
+
+.mon-bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    border: none;
+}
+
+.mon-bouton:hover {
+    transform: translateY(-2px);
+    /* Déplace légèrement le bouton vers le haut lors du survol */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    /* Change l'ombre du bouton lors du survol */
+}
+
+#signaler {
+    width: 20%;
+    font-family: Arial;
+    float: right;
+    font-size: 17px;
+}
+
+#mypopupSign{
+    display: none;
+}

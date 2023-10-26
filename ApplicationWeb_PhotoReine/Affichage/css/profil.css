@@ -1,0 +1,390 @@
+h1 {
+    font-family: Arial;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: Arial;
+}
+
+#profil {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+
+#vousetesconnecte {
+    width: 30%;
+    float: center;
+    text-align: center;
+}
+
+#deconnexion {
+    width: 10%;
+    font-family: Arial;
+    float: right;
+    font-size: 17px;
+    margin-top: 1%;
+}
+
+#informationsperso {
+    margin-left: 5%;
+    width: 50%;
+    display: block;
+    font-family: Arial;
+    float: left;
+    display: inline;
+}
+
+.mesphotos {
+    margin-left: 5%;
+}
+
+#content {
+    float: right;
+    width: 100%;
+    display: inline;
+}
+
+#content,
+#informationsperso {
+    display: inline-block;
+}
+
+
+
+
+
+ul {
+    /* Supprimer les marges et les listes à puces */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    /* Afficher les éléments du menu en ligne */
+    display: inline-block;
+}
+
+/*a {*/
+/* Ajouter un style pour les liens */
+/*  display: block;*/
+/*  padding: 10px 20px;*/
+/*  color: #000000;*/
+/*  text-decoration: none;*/
+/*}*/
+
+
+a:hover {
+    /* Ajouter un effet au survol */
+    background-color: #555555;
+}
+
+
+div {
+    display: block;
+    font-family: Arial;
+}
+
+.mon-bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5ce1e6;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    border: none;
+}
+
+#suppression {
+    background-color: #ff0000
+}
+
+/*.photo {
+    vertical-align: top;
+    width: 35%;
+    border-radius: 10px;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}*/
+
+
+
+.myFlexbox {
+    display: none;
+}
+
+.myFlexbox.show {
+    display: flex;
+}
+
+
+#profil,
+#vousetesconnecte,
+#deconnexion {
+    display: flex;
+}
+
+.mon-bouton:hover {
+    transform: translateY(-2px);
+    /* Déplace légèrement le bouton vers le haut lors du survol */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    /* Change l'ombre du bouton lors du survol */
+}
+
+.encadré {
+    width: 100px;
+    display: inline-block;
+    /* Affiche le bouton en ligne avec le texte */
+    padding: 10px 20px;
+    /* Ajoute un espace de remplissage au bouton */
+    border: 2px dotted #000000;
+    color: #000000;
+    /* Couleur du texte du bouton */
+    text-align: center;
+    /* Centre le texte horizontalement */
+    text-decoration: none;
+    /* Supprime la décoration de soulignement par défaut */
+    border-radius: 10px;
+    /* Arrondi les coins du bouton */
+}
+
+.container p {
+    display: inline;
+    margin-right: 70px;
+    position: relative;
+    /* Ajoute une marge entre les deux paragraphes */
+}
+
+#mesphotospubliées {
+    background-color: #dfffe1;
+    font-family: cambria;
+    font-size: 24;
+    margin-left: auto;
+    margin-right: 4%;
+    float: left;
+    width: 48%;
+}
+
+#mesphotosreines {
+    background-color: #dfffe1;
+    font-family: cambria;
+    font-size: 24;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    width: 48%;
+}
+
+#mesphotospubliées,
+#mesphotosreines {
+    display: inline-block;
+    margin: 1em;
+    border-radius: 2em;
+}
+
+/*#photo {
+    width: 35%;
+    border-radius: 10px;
+    margin-right: 5%;
+}*/
+
+#categ {
+    margin-left: 30px;
+}
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /* max-width: 600px; */
+    text-align: center;
+}
+
+.popupSuppr {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 35%;
+    top: 40%;
+    /* width: 50%; */
+    /* height: 50%; */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popupSuppr-content {
+    background-color: #fefefe;
+    /* margin: 10% auto; */
+    /* padding: 20px; */
+    border: 1px solid #888;
+    /* width: 50%; */
+    /* max-width: 50%; */
+    text-align: center;
+}
+
+#popup-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9998;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#commentaire {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    border: 2px solid;
+    width: 15%;
+}
+
+#info,
+#identifiant {
+    display: inline-block;
+}
+
+#info {
+    width: 20%;
+    float: left;
+}
+
+#textecommentaire {
+    border: 1px dotted;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.galerie-photos {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-bottom: 2em; */
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.galerie-photos .photos-galerie {
+    width: 40%;
+    height: 25%;
+    margin-left: 3%;
+    border-radius: 2em;
+    margin-top: 2%;
+    /* float: left; */
+}
+
+.galerie-photos .bouton-supprimer-galerie {
+    width: 5%;
+    height: 5%;
+    margin-left: 1%;
+    margin-top: 2%;
+    /* margin-right: 4%; */
+    border-radius: 2em;
+    /* float: right; */
+}
+
+.photo-container {
+    width: 45%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.photo-container .photos-galerie {
+    width: 80%;
+    height: 90%;
+    /* margin-left: 3%; */
+    border-radius: 2em;
+    margin-top: 2%;
+}
+
+.photo-container .bouton-supprimer-galerie {
+    width: 10%;
+    height: 15%;
+    margin-top: 5%;
+    margin-left: 3%;
+    /* margin-left: 3%; */
+    border-radius: 2em;
+    /* margin-top: 2%; */
+}
+
+#photo {
+    float: center;
+    width: 30%
+}
+
+.categraison {
+    float: left;
+}
+
+.categraison,
+#photo,
+#boutons {
+    display: inline-block;
+}
+
+#photosign {
+    float: center;
+    width: 100%
+}
+
+#boutons {
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+}
+
+.signalement {
+    width: 45%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}

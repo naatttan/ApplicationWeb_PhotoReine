@@ -1,0 +1,76 @@
+.icon {
+    width: 30%;
+    float: left;
+    margin-right: 10%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#cote-utilisateur {
+    margin-top: 5%;
+    margin-left: 15%;
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+#bar-concours {
+    float: right;
+    width: 25%;
+    background-color: #dfffe1;
+    padding-left: 30px;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 7%;
+}
+
+#h1 {
+    text-align: center;
+    float: center;
+}
+
+button {
+    margin-left: 20%;
+    border: none;
+    padding: 10px;
+    background-color: #00ecec;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0affff;
+}
+
+button:active {
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3) inset;
+    /* transform: translateY(1px); */
+}
+
+.connexion {
+    float: 20%;
+}
+
+.droite {
+    float: center;
+}
+
+#utilisateur-noninscri,
+#utilisateur-connecte {
+    padding: 90px;
+    margin-left: 80px;
+}
+
+#utilisateur-connecte {
+    border-bottom: 0.5px solid rgb(184, 184, 184);
+}

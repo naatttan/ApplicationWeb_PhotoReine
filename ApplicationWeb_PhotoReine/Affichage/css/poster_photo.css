@@ -1,0 +1,48 @@
+#texte {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+}
+
+#postphoto {
+    width: 50%;
+}
+
+#contour {
+    border: 1px dotted;
+    border-radius: 20px;
+    padding: 5px 10px;
+    height: 30%
+}
+
+#boutontelecharger {
+    width: 10%;
+    float: right;
+
+}
+
+.mon-bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5ce1e6;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    border: none;
+}
+
+.mon-bouton:hover {
+    transform: translateY(-2px);
+    /* Déplace légèrement le bouton vers le haut lors du survol */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    /* Change l'ombre du bouton lors du survol */
+}
